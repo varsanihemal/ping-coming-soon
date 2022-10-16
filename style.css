@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-main {
+    width: 100%;
+    padding-top: 88px;
+}
+
+.img-main img {
+    width: 642px;
+}
+
+.img-header {
+    padding-top: 65px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    transform: translateY(-13px);
+    font-size: 16px;
+}
+
+ul li a i {
+    border: 1px solid var(--Gray);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+}
+
+ul li a i:hover {
+    background-color: var(--Blue);
+    color: white;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Libre Franklin';
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 750px;
+}
+
+.text-header {
+    padding-top: 44px;
+}
+
+.text-header h1 {
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+.text-header p {
+    padding-top: 18px;
+    color: var(--Very-Dark-Blue);
+    font-weight: 300;
+}
+
+span {
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+
+#form {
+    padding-top: 39px;
+    padding-left: 0px;
+}
+
+.input-info {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+}
+
+input {
+    width: 422px;
+    height: 55px;
+    border-radius: 30px;
+    border: 1px solid var(--Gray);
+    padding-left: 30px;
+    font-size: 16.5px;
+    font-weight: 300;
+}
+
+button {
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: var(--Blue);
+    color: white;
+    font-size: 18px;
+    border: none;
+    box-shadow: 2px 4px 15px 1px rgba(58, 86, 248, 0.774);
+    cursor: pointer;
+}
+
+.email-info-error p {
+    font-size: 13px;
+    text-align: start;
+    padding-top: 8px;
+    padding-left: 25px;
+    color: red;
+    display: none;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+.footer p {
+    font-size: 13px;
+    padding-top: 10px;
+    color: var(--Gray);
+}
+
+.error .email-info-error p {
+    display: block;
+}
+
+.error input {
+    border: 1px solid red;
+}
+
+.attribution {
+    font-size: 13px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 670px) {
+
+    .container {
+        max-width: 400px;
+    }
+
+    .input-info {
+        flex-direction: column;
+    }
+
+    input {
+        width: 320px;
+    }
+
+    button {
+        width: 320px;
+    }
+
+    .email-info-error p {
+        padding-top: 2px;
+        padding-left: 15px;
+    }
+
+    .text-header h1 {
+        font-size: 28px;
+    }
+}
